@@ -140,3 +140,54 @@ footer {
   margin: 5px auto;
   text-align: center;
 }
+
+/* Responsive web design*/
+@media screen and (min-width: 1920px) {
+  .banner {
+    height: 500px;
+  }
+  .banner img {
+    margin-top: 50px;
+  }
+  .dropdown-hover,
+  .home a {
+    font-size: 24px;
+    padding: 4px;
+  }
+  .dropdown-menu a {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 450px) {
+  .banner {
+    height: 400px;
+  }
+  .dropdown-hover,
+  .home a {
+    font-size: 24px;
+    padding: 4px;
+  }
+
+  .dropdown-menu a {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .banner {
+    height: 400px;
+  }
+  .banner img {
+    width: 280px;
+    margin-top: 50px;
+  }
+  .dropdown-hover,
+  .home a {
+    font-size: 24px;
+    padding: 0px;
+  }
+
+  .dropdown-menu a {
+    font-size: 1.5rem;
+  }
+}
