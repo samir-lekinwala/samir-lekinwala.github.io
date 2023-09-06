@@ -57,6 +57,7 @@ body {
   position: absolute;
   top: 40px;
   max-width: 400px;
+  z-index: 3;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -85,6 +86,11 @@ li {
   width: 300px;
   box-shadow: 30px 15px 40px 40px;
   border-radius: 50%;
+  transition: 6s;
+}
+
+.banner img:hover {
+  box-shadow: 500px 100px 100px 40px;
 }
 
 .banner {
@@ -103,6 +109,15 @@ li {
 }
 
 /* Styling for intro and blog pages */
+
+.blogpost h1 {
+  position: relative;
+  display: inline-flex;
+  bottom: 240px;
+  text-shadow: -1px 1px 1px black;
+  z-index: 1;
+}
+
 h1,
 h2,
 h3,
