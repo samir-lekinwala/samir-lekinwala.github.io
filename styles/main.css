@@ -112,6 +112,10 @@ p {
   text-align: center;
 }
 
+.quote {
+  font-style: italic;
+}
+
 p {
   max-width: 600px;
   text-align: center;
@@ -125,12 +129,17 @@ h1 {
 }
 
 .intro {
-  max-width: 450px;
+  max-width: 800px;
   margin: 0 auto;
   margin-bottom: 50px;
   font-size: 1.3em;
+  font-family: 'Courier New', Courier, monospace;
 }
 
+.intro p {
+  margin-bottom: 20px;
+  max-width: 800px;
+}
 /* footer */
 
 footer {
