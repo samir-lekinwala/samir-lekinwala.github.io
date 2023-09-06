@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Class VS ID</title>
+    <meta charset="UTF-8" />
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <nav class="top-nav">
+      <div class="home"><a href="/index.html">Home</a></div>
+
+      <div class="dropdown">
+        <div class="dropdown-hover">Blogs</div>
+        <div class="dropdown-menu">
+          <a href="#">Blog 1</a>
+          <a href="#">Blog 2</a>
+          <a href="#">Blog 3</a>
+          <a href="#">Blog 4</a>
+          <a href="#">Blog 5</a>
+          <a href="/blog/te-houtaewa-template.html">te-houtaewa</a>
+          <a href="/blog/html-css.html">Class vs ID</a>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="banner">
+        <div class="banner-background"></div>
+      </div>
+    </header>
+    <main>
+      <div class="blogpost">
+        <h1>Best practices associated with using Classes vs IDs</h1>
+        <p>
+          To talk about the best practices for Classes and IDs we first need to
+          talk about CSS specificity. This is the hierarchy that is in place to
+          determine what CSS code will have precedence over the other. MDN Web
+          Docs has this below definition for specificity.
+        </p>
+        <p class="quote">
+          Specificity is the algorithm used by browsers to determine the CSS
+          declaration that is the most relevant to an element, which in turn,
+          determines the property value to apply to the element. The specificity
+          algorithm calculates the weight of a CSS selector to determine which
+          rule from competing CSS declarations gets applied to an element.
+        </p>
+        <p>
+          If we simplify this down, both Classes and ID are used to style html
+          code and have different weights attached to them. Depending on which
+          one weighs the most, the code overwrites the style of the other. In
+          this explanation let’s say there’s a competition of who weighs the
+          most, the ID selector has a weight of 100kg, and Class selector has a
+          weight of 50kg. From that alone we can tell that the ID selector at
+          100kg is going to win and have precedence over the lighter 50kg Class
+          selector.
+        </p>
+        <p>
+          We can see this in the below test. Our h1 element has two selectors,
+          one for Class and one for ID applied in HTML.
+        </p>
+        <img
+          class="html-snippet"
+          src="/images/html-class-and-id.png"
+          alt="Snippet of HTML code"
+        />
+        <p>
+          In our CSS stylesheet we use ‘#’ to address IDs followed by the value
+          we give to it; in this case I gave the ID a value of ‘blue’.
+          Similarly, to address class selectors you use ‘.’ Followed once again
+          by the value which I have put as ‘red’.
+        </p>
+        <p>
+          Since CSS runs code from top to bottom, like how we read a block of
+          text, from top to bottom, our h1 element should show the background
+          colour of red since that was the last line of code to be read by the
+          browser.
+        </p>
+        <img
+          class="css-class-id"
+          src="/images/class-vs-id-css.png"
+          alt="Code snippet from CSS for Class and ID"
+        />
+        <p>
+          But, due to the weight of the ID at a whopping 100kg, the browser
+          determines that it has precedence over the smaller petite 50kg Class
+          selector and thus our Hello World! H1 header will be showing the
+          colour blue.
+        </p>
+        <img
+          class="id-winner"
+          src="/images/id-selector-wins.png"
+          alt="running code in browser example - ID overrides Class"
+        />
+        <p>
+          Using the example above, you can see that the ID outweighs the Class
+          selector. This means you could write code and style with class
+          selector but if you want specific elements being overwritten you can
+          use the ID selector and address the specific styles that way.
+        </p>
+        <p>
+          A key difference with ID and Class is that IDs are unique and can only
+          be used once in the HTML page whilst classes can be reused as many
+          times as required. This means if you have an element in your HTML code
+          that is only going to appear just once, you are safe to use the ID
+          selector. If you are planning to reuse the selector multiple times in
+          your HTML code you should use the Class selector. ID will in most
+          cases be used only sparingly. For example, if you have 5 tables of
+          data in your HTML code and you want them all to look the same, you
+          would add class selectors to each table in HTML and then style them in
+          CSS using just one Class “.table” selector. If you were to use ID
+          selector you would need to address each table individually with the
+          unique IDs to be styled. E.g “#table-1”, “#table-2” “#table-3” and so
+          forth.
+        </p>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
