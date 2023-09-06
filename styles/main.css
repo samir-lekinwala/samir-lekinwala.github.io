@@ -170,6 +170,19 @@ footer {
   overflow: hidden;
 }
 
+.question {
+  font-style: italic;
+  font-size: 2rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.answer {
+  margin-top: 40px;
+}
+
 /* Responsive web design*/
 @media screen and (min-width: 1920px) {
   .banner {
