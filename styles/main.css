@@ -141,6 +141,20 @@ footer {
   text-align: center;
 }
 
+.blogpost {
+  text-align: center;
+  margin: 0 auto;
+}
+.blogpost img {
+  max-width: 450px;
+  margin-bottom: 20px;
+}
+
+.blogpost p {
+  margin-bottom: 20px;
+  max-width: 1000px;
+}
+
 /* Responsive web design*/
 @media screen and (min-width: 1920px) {
   .banner {
