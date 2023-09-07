@@ -81,7 +81,8 @@ li {
   list-style-type: none;
 }
 
-/* Banner */
+/* Banner profile image */
+
 .banner img {
   width: 300px;
   box-shadow: 30px 15px 40px 40px;
@@ -92,13 +93,14 @@ li {
 .banner img:hover {
   box-shadow: 500px 100px 100px 40px;
 }
+/* Main banner image of earth */
 
 .banner {
   text-align: center;
   background-repeat: no-repeat;
   background-position: top;
   height: 700px;
-  width: 100vw;
+  max-width: 100vw;
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 1),
@@ -170,8 +172,14 @@ h1 {
 }
 
 .rocket-ship {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
+}
+
+.rocket-ship img {
+  display: flex;
 }
 
 .question {
