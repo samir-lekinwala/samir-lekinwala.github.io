@@ -206,6 +206,10 @@ h1 {
 .answer {
   margin-top: 40px;
 }
+.controlFlow {
+  width: 800px;
+  height: auto;
+}
 
 /* footer */
 footer {

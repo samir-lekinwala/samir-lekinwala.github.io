@@ -31,7 +31,144 @@
       </div>
     </header>
     <div class="blogpost">
-      <h1>Javascript technical blog</h1>
+      <h1>Javascript Fundamentals</h1>
+      <p>
+        Welcome to the next instalment of my technical series of blogs. Today
+        I’m going to be writing about Javascript.
+      </p>
+      <p>
+        Javascript is a programming language unlike HTML and CSS. If we consider
+        HTML as the foundation and framing of a house and CSS as the internal
+        styling of the house then we can consider Javascript as being the
+        functions in the house, or what you can do in the house. You can change
+        the way the house functions. For e.g if your house is already built then
+        you can use Javascript to alter the house after it’s already been built.
+        Similar to a renovation! But you can go as far as altering the
+        foundations and styling of the house after it’s already been built, or
+        you can even use Javascript to build the entire house from scratch if
+        you please! If you change your mind you can once again change it
+        dynamically. For e.g if your house was already built but you don’t like
+        wall between your kitchen and your living room then tear it down with
+        Javascript! It’s essentially renovating but you’ve got some of the best
+        tools in the world to work with and it’s only a matter of your own
+        imagination for what your house looks like and functions are like in the
+        end.
+      </p>
+      <p>
+        So as I’ve explained, Javascript can allow you to change the
+        fundamentals of the house and bring life to it. The possibilities are
+        almost endless. It gives a lot of flexibility whereas HTML and CSS are a
+        bit more rigid and don’t allow for much dynamic change.
+      </p>
+      <p>
+        These changes are done using what we call the DOM or Document Object
+        Model. The browser allows us to access and use various datapoints on
+        websites. Using these datapoints we can change the way the website
+        functions/looks. For e.g say you want to change the colour of the
+        background when a user clicks on the page. Well, you could insert a
+        piece of code that attaches to a datapoint in the DOM that changes the
+        background based on the user clicking the mouse. As seen below.
+      </p>
+      <img src="/images/js-fundamentals/background-to-red.png" />
+      <p>
+        In this instance, upon clicking within the body area of the website, the
+        page will turn from the default white to red. That’s not the most
+        exciting thing to demonstrate but this just goes to show the
+        functionality of Javascript. What this Javascript code has done is it
+        has taken the HTML code using the DOM and added a style attribute with
+        background-color: red. This code dynamically changed the code of the
+        HTML and inserted it in when a click event happened on the body of the
+        page.
+      </p>
+      <p>See the HTML code change as soon as I clicked within the website.</p>
+      <div class="sideBySide">
+        <img
+          class="sidebyside1"
+          src="/images/js-fundamentals/before function.png"
+        />
+        <img
+          class="sidebyside2"
+          src="/images/js-fundamentals/after function.png"
+        />
+      </div>
+      <p>
+        This example was all done with what is called a function. A function is
+        a set of instructions that is told to the browser when it has been
+        activated. Only once this function has been activated will the events
+        transpire.
+      </p>
+      <img src="/images/js-fundamentals/background-to-red-highlight.png" />
+      <p>
+        In our example we can see at the top I have declared the function as
+        ‘changeBackground’ with content within it. On the very last line I have
+        activated the function by typing in the code changeBackground() within
+        the Javascript code. What this will mean is as soon as the website is
+        loaded, this function will already be running, and the chain of events
+        should be happening. It was only now waiting for me to click my mouse
+        button on the screento start the next piece of instructions. The click
+        of the mouse button then sparks another function, this was to turn the
+        background color to red. So really, using functions is just like having
+        a chain of events happen based on your given instructions when you
+        request for them to happen or when you designed it to activate.
+      </p>
+      <p>
+        Let’s also look at what is called control flow. Control flow is
+        essentially the order of which the code is being run. In most cases code
+        is run from top to bottom. However, with javascript the control flow can
+        be dependant on when the code is being told to run. Javascript might
+        initially be reading code from top to bottom, like how we read a book.
+        But using something like a loop can disrupt the flow. The control flow
+        will change. A function at the bottom of your page can callback
+        functions at the top of your page. It’s quite flexible. Think of it like
+        reading a book that has the added feature of being a ‘pick your own
+        adventure’ type of feature where after reading the page, you’re asked to
+        choose an option and flip to page x. In this case the control flow is
+        not giving an option, it’s forcing the code to jump pages, backwards or
+        forwards depending on your code. This can be seen in a loop very
+        clearly. Loops will continue to run the code until it is told to stop.
+        The batch of code will run top to bottom, top to bottom as many times as
+        its been told.
+      </p>
+      <img class="controlFlow" src="/images/js-fundamentals/control-flow.png" />
+      <p>
+        We also can’t forget objects and arrays. These are two different types
+        of data storing mechanisms. Objects store keys with values and arrays
+        simply store values. To me it makes sense to store data as an object if
+        you plan to have multiple properties in said object. For example you
+        could add in the name of a person and their age and when you attempt to
+        access the variable in your browser, it will show you the properties and
+        the values of the properties. See examples below.
+      </p>
+      <img src="/images/js-fundamentals/objects and arrays.png" />
+      <p>
+        The object has two properties, one for name and one for age. Both have
+        their own values attached to it and can be accessed as a whole or
+        individually. If you want to just access the objects name and find out
+        what it is you could type in console.log(object.name) and that will show
+        you ‘Samir’
+      </p>
+      <img src="/images/js-fundamentals/object-name.png" />
+      <p>
+        On the other hand arrays are very simple. The array has an index that
+        starts at 0, this index is for the values that are stored in the array.
+        For example our array above shows that there are two values ‘Samir’ and
+        ‘30’. You can once again access these values individually or altogether.
+        If you want to access the entire array you can simply say
+        console.log(array) and it will print out in the console
+      </p>
+      <img src="/images/js-fundamentals/array consolelog.png" />
+      <p>
+        If you want to access the ‘30’ in the array you can type in
+        console.log(array[1]) to see the contents come up in the console.
+      </p>
+      <img src="/images/js-fundamentals/array age.png" />
+      <p>
+        These are just some of the fundamental components of Javascript. There
+        are a lot more but unfortunately my knowledge only goes so far at this
+        current point. Fortunately, this gives me a lot of room to grow and
+        knowing that I have these fundamentals on hand will surely help me
+        understand Javascript just that tiny bit better.
+      </p>
     </div>
 
     <footer></footer>
