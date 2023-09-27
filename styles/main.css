@@ -135,6 +135,7 @@ li {
 }
 
 /* Blogpost styling */
+ol,
 li,
 h1,
 h2,
@@ -148,7 +149,8 @@ p {
   font-style: italic;
 }
 
-p {
+p,
+li {
   max-width: 600px;
   text-align: center;
   margin: 0 auto;
@@ -175,6 +177,9 @@ h1 {
   z-index: 1;
 }
 
+.orderedList li {
+  list-style-type: inherit;
+}
 .list {
   text-align: center;
   position: relative;
